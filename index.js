@@ -18,3 +18,8 @@ heartClick('heart6');
 heartClick('heart7');
 heartClick('heart8');
 heartClick('heart9');
+
+// call js 
+document.getElementById('call-1').addEventListener('click', function() {
+    alert('Calling...');
+});
