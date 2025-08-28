@@ -10,7 +10,7 @@
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="mx-auto">
+<body >
     <!-- HEADER OR NAV  -->
      <div class="flex flex-col sm:flex-row justify-between items-center p-3">
     <div class="flex flex-col sm:flex-row gap-6 justify-center items-center text-center">
@@ -34,7 +34,7 @@
     </div>
   </div>
     <!-- BANNER  -->
-      <div class=" mx-auto w-full bg-green-900 w-80 text-center flex flex-col justify-center items-center py-4 sm:py-6 gap-2 sm:gap-3 px-3">
+      <div class=" mx-auto w-auto bg-green-900 w-80 text-center flex flex-col justify-center items-center py-4 sm:py-6 gap-2 sm:gap-3 px-3">
              <img class="w-[60px] sm:w-[92px] md:w-[120px] mx-auto" src="./assets/logo-dark.png" alt="">
              <h1 class="text-white font-bold text-lg sm:text-xl md:text-2xl ">
                Emergency Service Directory
@@ -238,7 +238,7 @@
             </div>
             
         </div>
-        <div class=" mx-auto history-section  md:w-[320px] h-auto md:h-[600px] bg-[#F9F9F9] m-3 rounded-lg  bg-white">
+        <!-- <div class=" mx-auto history-section  md:w-[320px] h-auto md:h-[600px] bg-[#F9F9F9] m-3 rounded-lg  bg-white">
             <div class="flex justify-between items-center p-3 ">
                 <h1 class="font-bold text-base text-gray-900"><i class="fa-regular fa-clock"></i> Call History</h1>
                 <button id="clear-btn" class="justify-center align-center text-center w-[min] py-3 px-6 rounded-full border border-gray-200  bg-green-600 font-medium text-sm text-white mt-1">Clear</button>
@@ -254,8 +254,20 @@
                      </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+        
+    <!-- HISTORY-->
+    <div class="history-section w-full md:w-[350px] h-auto md:h-[800px] bg-white m-3 rounded-lg ">
+      <div class="flex justify-between items-center p-3">
+        <h1 class="font-bold text-base text-gray-900"><i class="fa-regular fa-clock"></i> Call History</h1>
+        <button id="clear-btn" class="justify-center items-center py-2 px-4 rounded-full border border-gray-200 bg-green-600 text-white font-medium text-sm">Clear</button>
+      </div>
+         <div id="call-history" class="p-3 flex flex-col bg-[#fafafa] gap-3 rounded-xl max-h-[700px] ">
+         </div>
     </div>
+
+  </div>
+</div>
     <script src="index.js"></script>
 </body>
 </html>

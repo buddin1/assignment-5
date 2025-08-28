@@ -67,24 +67,47 @@ copyClick('copy-btn-6', 'call-num6')
 copyClick('copy-btn-7', 'call-num7')
 copyClick('copy-btn-8', 'call-num8')
 copyClick('copy-btn-9', 'call-num9')
+     
+    
 
-
-
-
-// document.getElementById('call-destination1').addEventListener('click', function() {
-// let destination = document.getElementById('call-destination1').innerText;
-// let destinationNumber = document.getElementById('call-num-1').innerText;  
-// const div = document.createElement('div');
-// div.innerText = 
-
-// });
+    // // Clear history button
+    // document.getElementById('clear-btn').addEventListener('click', function() {
+    //   document.getElementById('call-history').innerHTML = '';
+    // });
+  
 
 
 // history 
-document.getElementById('clear-btn').addEventListener('click', function() {
-   
+function setupCallButton(Id1, Id2, Id3) { 
+    document.getElementById(Id1).addEventListener('click', function() {
+        let destination = document.getElementById(Id2).innerText;
+        let destinationNumber = document.getElementById(Id3).innerText;
+        const now = new Date();
+        // const time = now.toLocaleTimeString([], { hour: '2-digit', minute:'2-digit', second:'2-digit', hour12: true });
+        const time = now.toLocaleTimeString();
+        const historyDiv =document.createElement('div');
+        historyDiv.classList.add('flex', 'justify-between', 'items-center', 'p-3', 'border','bg-[#fafafa]', 'rounded-lg', 'shadow-md');
+        historyDiv.innerHTML = `
+          <div class="flex flex-col">
+            <p class="text-sm font-semibold text-gray-900">${destination}</p>
+            <p class="text-sm text-gray-500 mt-1">${destinationNumber}</p>
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">${time}</p>
+          </div>`;
+     document.getElementById('call-history').prepend(historyDiv);
 
+        
+    });}
     
-    
-    
-});
+    setupCallButton('call-1', 'call-destination1', 'call-num1');
+    setupCallButton('call-2', 'call-destination2', 'call-num2');
+    setupCallButton('call-3', 'call-destination3', 'call-num3');
+    setupCallButton('call-4', 'call-destination4', 'call-num4');
+    setupCallButton('call-5', 'call-destination5', 'call-num5');
+    setupCallButton('call-6', 'call-destination6', 'call-num6');
+    setupCallButton('call-7', 'call-destination7', 'call-num7');
+    setupCallButton('call-8', 'call-destination8', 'call-num8');
+    setupCallButton('call-9', 'call-destination9', 'call-num9');
+
+
