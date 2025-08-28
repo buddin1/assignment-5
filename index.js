@@ -68,14 +68,6 @@ copyClick('copy-btn-7', 'call-num7')
 copyClick('copy-btn-8', 'call-num8')
 copyClick('copy-btn-9', 'call-num9')
      
-    
-
-    // // Clear history button
-    // document.getElementById('clear-btn').addEventListener('click', function() {
-    //   document.getElementById('call-history').innerHTML = '';
-    // });
-  
-
 
 // history 
 function setupCallButton(Id1, Id2, Id3) { 
@@ -83,10 +75,9 @@ function setupCallButton(Id1, Id2, Id3) {
         let destination = document.getElementById(Id2).innerText;
         let destinationNumber = document.getElementById(Id3).innerText;
         const now = new Date();
-        // const time = now.toLocaleTimeString([], { hour: '2-digit', minute:'2-digit', second:'2-digit', hour12: true });
         const time = now.toLocaleTimeString();
         const historyDiv =document.createElement('div');
-        historyDiv.classList.add('flex', 'justify-between', 'items-center', 'p-3', 'border','bg-[#fafafa]', 'rounded-lg', 'shadow-md');
+        historyDiv.classList.add('flex', 'justify-between', 'items-center', 'p-3','bg-[#fafafa]', 'rounded-lg', 'shadow-md');
         historyDiv.innerHTML = `
           <div class="flex flex-col">
             <p class="text-sm font-semibold text-gray-900">${destination}</p>
@@ -99,7 +90,7 @@ function setupCallButton(Id1, Id2, Id3) {
 
         
     });}
-    
+
     setupCallButton('call-1', 'call-destination1', 'call-num1');
     setupCallButton('call-2', 'call-destination2', 'call-num2');
     setupCallButton('call-3', 'call-destination3', 'call-num3');
@@ -109,5 +100,9 @@ function setupCallButton(Id1, Id2, Id3) {
     setupCallButton('call-7', 'call-destination7', 'call-num7');
     setupCallButton('call-8', 'call-destination8', 'call-num8');
     setupCallButton('call-9', 'call-destination9', 'call-num9');
+
+    document.getElementById('clear-btn').addEventListener('click', function() {
+document.getElementById('call-history').innerHTML = '';
+    });
 
 
