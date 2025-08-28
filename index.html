@@ -22,11 +22,11 @@
                 <img class="w-[20px]" src="./assets/heart.png" alt="">
             </div>
             <div class="flex justify-center gap-2 font-bold px-6 bg-[#41ff6b1a] p-2 rounded-full px-1">
-                <h3>100</h3>
+                <h3 id="coin">100</h3>
                 <img class="w-[20px] " src="./assets/coin.png" alt="">
             </div>
             <div class=" text-white justify-center font-bold px-6  bg-[#00A63E] p-2 rounded-full px-2">
-                <h3>2 copy</h3>
+                <h3 ><span id="copy-count"> 2 </span> copy</h3>
             </div>
         </div>
     </div>
@@ -44,11 +44,11 @@
                     <div><img id="heart1" class=" w-[24px]" src="./assets/heart.png" alt=""></div>
                 </div>
                 <h2 class="text-lg font-semibold text-gray-900">National Emergency Number</h2>
-                <h3 class="text-sm text-gray-500 mt-1">National Emergency</h3>
-                <div class="text-4xl font-extrabold text-gray-900">999</div>
+                <h3 id="call-destination1" class="text-sm text-gray-500 mt-1">National Emergency</h3>
+                <div id="call-num1" class="text-4xl font-extrabold text-gray-900">999</div>
                 <div class="text-xs w-min p-2 m-1 text-gray-500 mt-1 rounded-lg bg-[#F3F3F3]">All</div>
                 <div class="flex gap-3 mt-5 h-[40px]">
-                    <button class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
+                    <button id="copy-btn-1" class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
                         <i class="fa-regular fa-copy"></i>
                         <h1>copy</h1>
                     </button>
@@ -65,15 +65,15 @@
                     <div><img id="heart2" class=" w-[24px]" src="./assets/heart.png" alt=""></div>
                 </div>
                 <h2 class="text-lg font-semibold text-gray-900">Police Helpline Number</h2>
-                <h3 class="text-sm text-gray-500 mt-1">Police</h3>
-                <div class="text-4xl font-extrabold text-gray-900">999</div>
+                <h3 id="call-destination2" class="text-sm text-gray-500 mt-1">Police</h3>
+                <div id="call-num2" class="text-4xl font-extrabold text-gray-900">999</div>
                 <div class="text-xs w-min p-2 m-1 text-gray-500 mt-1 rounded-lg bg-[#F3F3F3]">Police</div>
                 <div class="flex gap-3 mt-5 h-[40px]">
-                    <button class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
+                    <button id="copy-btn-2" class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
                         <i class="fa-regular fa-copy"></i>
                         <h1>copy</h1>
                     </button>
-                    <button  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
+                    <button id="call-2"  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
                         <i class="fa-solid fa-phone rotate-30"></i>
                         <h1>call</h1>
                     </button>
@@ -86,15 +86,15 @@
                     <div><img id="heart3" class=" w-[24px]" src="./assets/heart.png" alt=""></div>
                 </div>
                 <h2 class="text-lg font-semibold text-gray-900">Fire Service Number</h2>
-                <h3 class="text-sm text-gray-500 mt-1">Fire Service</h3>
-                <div class="text-4xl font-extrabold text-gray-900">999</div>
+                <h3 id="call-destination3" class="text-sm text-gray-500 mt-1">Fire Service</h3>
+                <div id="call-num3" class="text-4xl font-extrabold text-gray-900">999</div>
                 <div class="text-xs w-min p-2 m-1 text-gray-500 mt-1 rounded-lg bg-[#F3F3F3]">Fire </div>
                 <div class="flex gap-3 mt-5 h-[40px]">
-                    <button class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
+                    <button id="copy-btn-3" class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
                         <i class="fa-regular fa-copy"></i>
                         <h1>copy</h1>
                     </button>
-                    <button  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
+                    <button id="call-3"  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
                         <i class="fa-solid fa-phone rotate-30"></i>
                         <h1>call</h1>
                     </button>
@@ -107,15 +107,15 @@
                     <div><img id="heart4" class=" w-[24px]" src="./assets/heart.png" alt=""></div>
                 </div>
                 <h2 class="text-lg font-semibold text-gray-900">Ambulance Service  Number</h2>
-                <h3 class="text-sm text-gray-500 mt-1">Ambulance </h3>
-                <div class="text-4xl font-extrabold text-gray-900">1994-999999</div>
+                <h3 id="call-destination4" class="text-sm text-gray-500 mt-1">Ambulance </h3>
+                <div id="call-num4" class="text-4xl font-extrabold text-gray-900">1994-999999</div>
                 <div class="text-xs w-min p-2 m-1 text-gray-500 mt-1 rounded-lg bg-[#F3F3F3]">Health</div>
                 <div class="flex gap-3 mt-5 h-[40px]">
-                    <button class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
+                    <button id="copy-btn-4" class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
                         <i class="fa-regular fa-copy"></i>
                         <h1>copy</h1>
                     </button>
-                    <button  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
+                    <button id="call-4"  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
                         <i class="fa-solid fa-phone rotate-30"></i>
                         <h1>call</h1>
                     </button>
@@ -128,15 +128,15 @@
                     <div><img id="heart5" class=" w-[24px]" src="./assets/heart.png" alt=""></div>
                 </div>
                 <h2 class="text-lg font-semibold text-gray-900">Women & Child Helpline</h2>
-                <h3 class="text-sm text-gray-500 mt-1">Women & Child Helpline</h3>
-                <div class="text-4xl font-extrabold text-gray-900">109</div>
+                <h3 id="call-destination5" class="text-sm text-gray-500 mt-1">Women & Child Helpline</h3>
+                <div id="call-num5" class="text-4xl font-extrabold text-gray-900">109</div>
                 <div class="text-xs w-min p-2 m-1 text-gray-500 mt-1 rounded-lg bg-[#F3F3F3]">Help</div>
                 <div class="flex gap-3 mt-5 h-[40px]">
-                    <button class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
+                    <button id="copy-btn-5" class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
                         <i class="fa-regular fa-copy"></i>
                         <h1>copy</h1>
                     </button>
-                    <button  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
+                    <button id="call-5"  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
                         <i class="fa-solid fa-phone rotate-30"></i>
                         <h1>call</h1>
                     </button>
@@ -149,15 +149,15 @@
                     <div><img id="heart6" class=" w-[24px]" src="./assets/heart.png" alt=""></div>
                 </div>
                 <h2 class="text-lg font-semibold text-gray-900">Anti-corruption Helpline</h2>
-                <h3 class="text-sm text-gray-500 mt-1">Anti-corruption</h3>
-                <div class="text-4xl font-extrabold text-gray-900">106</div>
+                <h3 id="call-destination6" class="text-sm text-gray-500 mt-1">Anti-corruption</h3>
+                <div id="call-num6" class="text-4xl font-extrabold text-gray-900">106</div>
                 <div class="text-xs w-min p-2 m-1 text-gray-500 mt-1 rounded-lg bg-[#F3F3F3]">Govt.</div>
                 <div class="flex gap-3 mt-5 h-[40px]">
-                    <button class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
+                    <button id="copy-btn-6" class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
                         <i class="fa-regular fa-copy"></i>
                         <h1>copy</h1>
                     </button>
-                    <button  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
+                    <button id="call-6" class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
                         <i class="fa-solid fa-phone rotate-30"></i>
                         <h1>call</h1>
                     </button>
@@ -170,15 +170,15 @@
                     <div><img id="heart7" class=" w-[24px]" src="./assets/heart.png" alt=""></div>
                 </div>
                 <h2 class="text-lg font-semibold text-gray-900">Electricity Helpline Number</h2>
-                <h3 class="text-sm text-gray-500 mt-1">Electricity Outage</h3>
-                <div class="text-4xl font-extrabold text-gray-900">16216</div>
+                <h3 id="call-destination7" class="text-sm text-gray-500 mt-1">Electricity Outage</h3>
+                <div id="call-num7" class="text-4xl font-extrabold text-gray-900">16216</div>
                 <div class="text-xs w-min p-2 m-1 text-gray-500 mt-1 rounded-lg bg-[#F3F3F3]">Electricity</div>
                 <div class="flex gap-3 mt-5 h-[40px]">
-                    <button class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
+                    <button id="copy-btn-7" class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
                         <i class="fa-regular fa-copy"></i>
                         <h1>copy</h1>
                     </button>
-                    <button  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
+                    <button id="call-7"  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
                         <i class="fa-solid fa-phone rotate-30"></i>
                         <h1>call</h1>
                     </button>
@@ -191,15 +191,15 @@
                     <div><img id="heart8" class=" w-[24px]" src="./assets/heart.png" alt=""></div>
                 </div>
                 <h2 class="text-lg font-semibold text-gray-900">Brac Helpline Number</h2>
-                <h3 class="text-sm text-gray-500 mt-1">Brac</h3>
-                <div class="text-4xl font-extrabold text-gray-900">16445</div>
+                <h3 id="call-destination8" class="text-sm text-gray-500 mt-1">Brac</h3>
+                <div id="call-num8" class="text-4xl font-extrabold text-gray-900">16445</div>
                 <div class="text-xs w-min p-2 m-1 text-gray-500 mt-1 rounded-lg bg-[#F3F3F3]">NGO</div>
                 <div class="flex gap-3 mt-5 h-[40px]">
-                    <button class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
+                    <button id="copy-btn-8"  class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
                         <i class="fa-regular fa-copy"></i>
                         <h1>copy</h1>
                     </button>
-                    <button  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
+                    <button id="call-8"  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
                         <i class="fa-solid fa-phone rotate-30"></i>
                         <h1>call</h1>
                     </button>
@@ -212,15 +212,15 @@
                     <div><img id="heart9" class=" w-[24px]" src="./assets/heart.png" alt=""></div>
                 </div>
                 <h2 class="text-lg font-semibold text-gray-900">Bangladesh Railway Helpline</h2>
-                <h3 class="text-sm text-gray-500 mt-1">Bangladesh Railway</h3>
-                <div class="text-4xl font-extrabold text-gray-900">163</div>
-                <div class="text-xs w-min p-2 m-1 text-gray-500 mt-1 rounded-lg bg-[#F3F3F3]">Travel</div>
+                <h3 id="call-destination9" class="text-sm text-gray-500 mt-1">Bangladesh Railway</h3>
+                <div id="call-num9" class="text-4xl font-extrabold text-gray-900">163</div>
+                <div  class="text-xs w-min p-2 m-1 text-gray-500 mt-1 rounded-lg bg-[#F3F3F3]">Travel</div>
                 <div class="flex gap-3 mt-5 h-[40px]">
-                    <button class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
+                    <button id="copy-btn-9" class="flex justify-center align-center text-center w-[180px]  py-2 px-3 rounded-lg border border-gray-200 bg-white font-medium text-sm text-sm text-gray-500 mt-1">
                         <i class="fa-regular fa-copy"></i>
                         <h1>copy</h1>
                     </button>
-                    <button  class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
+                    <button id="call-9" class="flex justify-center align-center text-center w-[180px] py-2 px-3 rounded-lg border border-gray-200 bg-green-500 font-medium text-sm text-white mt-1">
                         <i class="fa-solid fa-phone rotate-30"></i>
                         <h1>call</h1>
                     </button>
@@ -231,11 +231,11 @@
         <div class="history-section w-[350px] h-[800px] bg-[#F9F9F9] m-3 rounded-lg  bg-white">
             <div class="flex justify-between items-center p-3 ">
                 <h1 class="font-bold text-base text-gray-900"><i class="fa-regular fa-clock"></i> Call History</h1>
-                <button class="justify-center align-center text-center w-[min] py-3 px-6 rounded-full border border-gray-200  bg-green-600 font-medium text-sm text-white mt-1">Clear</button>
+                <button id="clear-btn" class="justify-center align-center text-center w-[min] py-3 px-6 rounded-full border border-gray-200  bg-green-600 font-medium text-sm text-white mt-1">Clear</button>
             </div>
             <div>
-                <div class="flex flex-row p-3 border-1 border-gray-200 justify-between items-center m-3 rounded-lg shadow-md">
-                     <div class="flex flex-col justify-center items-left p-2 ">
+                <div id="history-section" class="flex flex-row p-3 border-1 border-gray-200 justify-between items-center m-3 rounded-lg shadow-md">
+                     <div id="hidden" class="flex flex-col justify-center items-left p-2 ">
                         <p class="text-sm font-semibold text-gray-900">Fire Service number</p>
                         <p class="text-sm text-gray-500 mt-1">999</p>
                      </div>
