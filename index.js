@@ -81,8 +81,10 @@ copyClick('copy-btn-9', 'call-num9')
 
 
 // history 
-document.getElementById('history-btn').addEventListener('click', function() {
-    const historySection = document.getElementById('history-section');
-    historySection.classList.remove('history-section');
+document.getElementById('clear-btn').addEventListener('click', function() {
+   
+
+    
+    
     
 });

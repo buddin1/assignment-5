@@ -10,35 +10,45 @@
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="mx-auto w-max">
-    <div class="  flex justify-between  items-center ">
-        <div class="flex  gap-6 mr-6 justify-center items-center text-center">
-            <div class="pt-1"><img class="w-[80px]" src="./assets/logo.png" alt=""></div>
-            <div class="pt-2"><h1 class="text-2xl text-[#006747] font-extrabold">Emergency <br>Service</h1></div>
-        </div>
-        <div class="flex gap-6 mr-6 justify-center items-center text-center">
-            <div class="flex justify-center gap-2 font-bold px-6 bg-[#41ff6b1a] p-2 rounded-full px-2">
-                <h3 id="heart-count">0</h3>
-                <img class="w-[20px]" src="./assets/heart.png" alt="">
-            </div>
-            <div class="flex justify-center gap-2 font-bold px-6 bg-[#41ff6b1a] p-2 rounded-full px-1">
-                <h3 id="coin">100</h3>
-                <img class="w-[20px] " src="./assets/coin.png" alt="">
-            </div>
-            <div class=" text-white justify-center font-bold px-6  bg-[#00A63E] p-2 rounded-full px-2">
-                <h3 ><span id="copy-count"> 2 </span> copy</h3>
-            </div>
-        </div>
+<body class="mx-auto">
+    <!-- HEADER OR NAV  -->
+     <div class="flex flex-col sm:flex-row justify-between items-center p-3">
+    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center text-center">
+      <div class="pt-1"><img class="w-[80px]" src="./assets/logo.png" alt=""></div>
+      <div class="pt-2 text-center sm:text-left">
+        <h1 class="text-xl sm:text-2xl text-[#006747] font-extrabold">Emergency <br>Service</h1>
+      </div>
     </div>
-    <div class="bg-green-900 text-center py-6 justify-center items-center flex flex-col gap-3">
-        <img class="w-[92px]" src="./assets/logo-dark.png" alt="">
-        <h1 class="text-white font-bold text-xl">Emergency Service Directory</h1>
-        <h3 class="text-white font-bold text-sm ">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</h3>
+    <div class="flex gap-3 mt-3 sm:mt-0 justify-center items-center text-center">
+      <div class="flex justify-center gap-2 font-bold px-4 sm:px-6 bg-[#41ff6b1a] p-2 rounded-full">
+        <h3 id="heart-count">0</h3>
+        <img class="w-[20px]" src="./assets/heart.png" alt="">
+      </div>
+      <div class="flex justify-center gap-2 font-bold px-4 sm:px-6 bg-[#41ff6b1a] p-2 rounded-full">
+        <h3 id="coin">100</h3>
+        <img class="w-[20px]" src="./assets/coin.png" alt="">
+      </div>
+      <div class="text-white justify-center font-bold px-4 sm:px-6 bg-[#00A63E] p-2 rounded-full">
+        <h3><span id="copy-count">2</span> copy</h3>
+      </div>
     </div>
-    <div class="mx-auto  main-section bg-[#41ff6b1a] p-3 flex flex-row  ">
-        <div class="card-section grid grid-cols-3 gap-3 p-3 ">
+  </div>
+    <!-- BANNER  -->
+      <div class=" mx-auto w-full bg-green-900 w-80 text-center flex flex-col justify-center items-center py-4 sm:py-6 gap-2 sm:gap-3 px-3">
+             <img class="w-[60px] sm:w-[92px] md:w-[120px] mx-auto" src="./assets/logo-dark.png" alt="">
+             <h1 class="text-white font-bold text-lg sm:text-xl md:text-2xl ">
+               Emergency Service Directory
+            </h1>
+            <h3 class="text-white font-bold text-xs sm:text-sm md:text-base ">
+              Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh
+            </h3>
+     </div>
+    <!-- MAIN  -->
+    <div class="mx-auto main-section bg-[#41ff6b1a] p-3 flex flex-col md:flex-row">
+
+        <div class="mx-auto card-section grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 p-3"> 
             <!-- 1 -->
-            <div class=" w-80 emergency-card bg-white p-2 m-3 rounded-lg shadow-md">
+            <div class="w-80 emergency-card bg-white p-2 m-3 rounded-lg shadow-md">
                 <div class="emergency-card-img flex flex-row gap-3 justify-between items-center mr-6">
                     <div class=" bg-[#FFE3E2] rounded-xl "><img class="w-[30px] p-1 " src="./assets/emergency.png" alt=""></div>
                     <div><img id="heart1" class=" w-[24px]" src="./assets/heart.png" alt=""></div>
@@ -228,19 +238,19 @@
             </div>
             
         </div>
-        <div class="history-section w-[350px] h-[800px] bg-[#F9F9F9] m-3 rounded-lg  bg-white">
+        <div class=" mx-auto history-section  md:w-[320px] h-auto md:h-[600px] bg-[#F9F9F9] m-3 rounded-lg  bg-white">
             <div class="flex justify-between items-center p-3 ">
                 <h1 class="font-bold text-base text-gray-900"><i class="fa-regular fa-clock"></i> Call History</h1>
                 <button id="clear-btn" class="justify-center align-center text-center w-[min] py-3 px-6 rounded-full border border-gray-200  bg-green-600 font-medium text-sm text-white mt-1">Clear</button>
             </div>
             <div>
-                <div id="history-section" class="flex flex-row p-3 border-1 border-gray-200 justify-between items-center m-3 rounded-lg shadow-md">
-                     <div id="hidden" class="flex flex-col justify-center items-left p-2 ">
-                        <p class="text-sm font-semibold text-gray-900">Fire Service number</p>
-                        <p class="text-sm text-gray-500 mt-1">999</p>
+                <div id="calls" class="flex flex-row p-3 border-1 border-gray-200 justify-between items-center m-3 rounded-lg shadow-md">
+                    <div id="" class="flex flex-col justify-center items-left p-2 ">
+                        <p id="caller-name" class="text-sm font-semibold text-gray-900">Fire Service number</p>
+                        <p id="caller-number" class="text-sm text-gray-500 mt-1">999</p>
                      </div>
                      <div>
-                        <p class="text-sm font-semibold text-gray-900">02:30:22 PM</p>
+                        <p id="time" class="text-sm font-semibold text-gray-900">02:30:22 PM</p>
                      </div>
                 </div>
             </div>
